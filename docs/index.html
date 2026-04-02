@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rushork Project Hub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Rushork Project Hub</h1>
+    <p class="subtitle">Dynamic project directory from GitHub API • auto-updates with repositories, languages, tags, and Pages links</p>
+    <div class="controls">
+      <input id="filterInput" type="search" placeholder="Search repo name / description" aria-label="Filter repos" />
+      <select id="langFilter" aria-label="Filter by language">
+        <option value="">All languages</option>
+      </select>
+    </div>
+  </header>
+
+  <p id="status"><span class="spinner"></span>Loading repositories...</p>
+  <section id="grid" aria-live="polite"></section>
+  <footer></footer>
+  <script src="app.js"></script>
+</body>
+</html>
